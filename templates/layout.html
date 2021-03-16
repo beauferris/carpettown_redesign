@@ -9,17 +9,43 @@
 <body>
     <header>
         <div class="container">
-            <h1 class ="logo">Hamzey</h1>
             <ul class="menu">
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="#top">Projects</a></li>
+                <li><a href="#section2">About</a></li>
             </ul>
         </div>
     </header>
+
     <div class = "container">
-        {%block content%}
-        {%endblock%}
+        <!-- {%block content%}
+        {%endblock%} -->
     </div>
+
+    <div class= "me" id ="section1">
+       
+    </div>
+
+    <div class= "portfolio" id = "section2">
+    
+        <a class="g s1" href="#section2"> 
+            <div class = "overlay">
+                <div class="title">Hike Visualization</div>
+            </div>
+        </a>
+
+        <a class="g s2" href="https://chopchopbarbershop.herokuapp.com/" target="_blank" > 
+            <div class = "overlay">
+                <div class="title">Appointment App</div>
+            </div>
+        </a>
+        
+        <a class="g s3" href="https://beauferris.github.io/" target="_blank" >
+            <div class = "overlay">
+                <div class="title">Crime Visualization</div>
+            </div> 
+        </a>
+    </div>
+   
 </body>
 </html>
 
